@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+        <p>Welcome to <br> The calculator...</p>
+        <div class="container">
+            <div class="display" id="disp"></div>
+                <div class="buttons">
+                    <button class="func" onclick="call('C')">C</button>
+                    <button class="func" onclick="call('%')">%</button>
+                    <button class="func" onclick="call('←')">←</button>
+                    <button class="func" onclick="call('/')">/</button>
+                    <button class="num" onclick="call('7')">7</button>
+                    <button class="num" onclick="call('8')">8</button>
+                    <button class="num" onclick="call('9')">9</button>
+                    <button class="func" id="func5" onclick="call('*')">*</button>
+                    <button class="num" onclick="call('4')">4</button>
+                    <button class="num" onclick="call('5')">5</button>
+                    <button class="num" onclick="call('6')">6</button>
+                    <button class="func" id="func6" onclick="call('-')">-</button>
+                    <button class="num" onclick="call('1')">1</button>
+                    <button class="num" onclick="call('2')">2</button>
+                    <button class="num" onclick="call('3')">3</button>
+                    <button class="func" id="func7" onclick="call('+')">+</button>
+                    <button class="num" onclick="call('00')">00</button>
+                    <button class="num" onclick="call('0')">0</button>    
+                    <button class="num" onclick="call('.')">.</button>
+                    <button class="func" onclick="result()">=</button>
+                </div>
+            </div>
+    </div>
+    
+            <script>
+                let expr="";
+                function result()
+                {
+                    expr=eval(expr);
+                    document.getElementById("disp").innerHTML=expr;
+                }
+                function call(i){
+                    if(i=="C")
+                    {
+                        let expr1="";
+                        expr= expr1;
+                        document.getElementById("disp").innerHTML=expr;
+                    }
+                    else if(i=="←")
+                    {
+                        expr=expr.slice(0,-1);
+                        document.getElementById("disp").innerHTML=expr;
+                    }
+                    else{
+                        expr=expr + i;
+                    document.getElementById("disp").innerHTML=expr;
+                    }
+                   
+                }
+            </script>
+</body>
+</html>

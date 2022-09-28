@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(39, 43, 47);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    min-height: 100vh;
+}
+.full
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin: 0.625rem;
+    font-size: 3.125rem;
+    margin-left: 0;
+    margin-right: 3.125rem;
+    color: rgb(99, 214, 99);
+    padding: 0%;
+}
+.container
+{
+    display: flex;
+    width: 21.875rem;
+    flex-wrap: wrap;
+    height: 33.125rem;
+    background-color: rgb(20, 22, 24);
+    border-radius: 0.625rem;    
+    justify-content: center;
+    box-shadow: 2px 2px 100px 20px rgb(41, 86, 41);
+}
+.container .display{
+    width: 90%;
+    height: 6.25rem;
+    margin: 1.25rem;
+    background-color: black;
+    text-align: right;
+    padding-right: 1.875rem;
+    padding-top: 3.125rem;
+    margin-bottom: 0%;
+    box-shadow: 0 0 0.625rem 0.125rem rgb(9, 9, 9);
+    border-radius: 5px;
+    
+}
+.buttons{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;  
+    margin-top: 0%;
+    margin: 0.3125rem;
+    margin-left: 1rem;
+}
+.container .buttons button{
+    
+    width: 3.75rem;
+    height: 3.125rem;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10px;
+    margin-right: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgb(9, 9, 9);
+    color: white;
+    font-size: 1.125rem;
+}
+.container .buttons .func{
+    color: rgb(99, 214, 99);
+}
+#func5{
+    font-size: 1.5625rem;
+}
+#func6{
+    font-size: 2.5rem;
+}
+#func7{
+    font-size: 1.5625rem;
+}
+/* @media screen and (max-width:425px ) {
+    body{
+        font-size: 5px;
+    }
+     
+}*/
