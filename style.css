@@ -58,6 +58,7 @@ p{
     padding-right: 1.875rem;
     padding-top: 3.125rem;
     margin-bottom: 0%;
+    overflow:hidden;
     box-shadow: 0 0 0.625rem 0.125rem rgb(9, 9, 9);
     border-radius: 5px;
     
